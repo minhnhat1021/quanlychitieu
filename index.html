@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý chi tiêu</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reset.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="title" class="col-third-x2">
+        <h1>NLB Managed Budgets</h1>
+      </div>
+      <div id="sign" class="col-third row">
+        <button class="signin col sign-btn-js">Đăng Nhập</button>
+        <button class="signup col sign-btn-js">Đăng ký</button>
+      </div>
+    </div>
+
+    <div id="slider">
+
+    </div>
+
+    <div id="content">
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+    <div class="modal-sign modal-sign-js">
+      <div class="modal-sign-container">
+
+      </div>
+    </div>
+  </div>
+  <!-- <script src="./main.js"></script> -->
+  <script>
+    const signs = document.querySelectorAll('.sign-btn-js')
+    const modalsign = document.querySelector('.modal-sign-js')
+    const modalsign_c = document.querySelector('.modal-sign-container')
+
+    function close_modal_sign() {
+      modalsign.classList.remove('open-modal-sign')
+    }
+    for (const sign of signs) {
+      sign.addEventListener("click", function () {
+        modalsign.classList.add('open-modal-sign')
+      })
+    }
+    modalsign.addEventListener('click', close_modal_sign)
+    modalsign_c.addEventListener('click', function (event) {
+      event.stopPropagation()
+    })
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

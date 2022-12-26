@@ -1,0 +1,62 @@
+
+
+#header
+{
+  height: 50px;
+  background-color: #444054;
+  color: rgb(29, 29, 29);
+  display: flex;
+  
+}
+#title
+{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  
+}
+#title h1
+{
+  margin-left: 20vw; 
+}
+#sign
+{
+  display: flex;
+  align-items: center;  
+}
+.modal-sign
+{
+  position: fixed;
+  background-color: #92929234;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.modal-sign-container
+{
+    width: 800px;
+    height: 500px;
+    background-color: white;
+}
+.open-modal-sign
+{
+  display: flex;
+}
+
+#slider
+{
+  height: calc(100vh - 50px);
+  background-color: #BEBBBB;
+}
+#content
+{
+
+}
+#footer
+{
+
+}

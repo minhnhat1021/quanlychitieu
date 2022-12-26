@@ -1,0 +1,35 @@
+/* https://coolors.co/bebbbb-444054-2f243a-fac9b8-db8a74 */ 
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row
+{
+  
+}
+.col
+{
+
+  padding: 8px 40px;
+  margin-left: 13vw;
+  margin-right: -12vw;
+  
+  
+  
+}
+.col-third
+{
+  width: calc(100%/3);
+}
+.col-third-x2
+{
+  width: calc((100%/3)*2);
+}
+
