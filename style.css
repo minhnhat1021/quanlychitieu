@@ -1,8 +1,14 @@
+:root
+{
+  --modal-width : 600px;
+  --modal-radius : 50px;
 
 
+}
+/* -------------------------BEGIN HEADER------------------------- */
 #header
 {
-  height: 50px;
+  height: 60px;
   background-color: #444054;
   color: rgb(29, 29, 29);
   display: flex;
@@ -12,22 +18,33 @@
 {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   
 }
-#title h1
-{
-  margin-left: 20vw; 
-}
+
 #sign
 {
   display: flex;
   align-items: center;  
+  justify-content: right;
+  
+}
+.sign-btn
+{
+  font-family: 'Unbounded', cursive;
+  border: none;
+  border-radius: 20px;
+  background-color: #FAC9B8;
+  padding: 12px 36px;
+  margin: 0 8px;
+  cursor: pointer;
+  font-weight: 700;
 }
 .modal-sign
 {
   position: fixed;
-  background-color: #92929234;
+  background-color: #92929210;
   display: none;
   align-items: center;
   justify-content: center;
@@ -36,22 +53,151 @@
   left: 0;
   right: 0;
 }
-.modal-sign-container
+.sign-container
 {
     width: 800px;
-    height: 500px;
+    
     background-color: white;
+    /* transform: translateY(11%); */
 }
 .open-modal-sign
 {
   display: flex;
+  
 }
 
+.sign-container-h
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 8px 16px;
+  font-size: 24px;
+}
+.sign-container-c
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: 16px;
+}
+.sign-container-c input
+{
+  margin: 16px 0;
+  padding: 16px 0;
+}
+.sign-container-c button
+{
+  margin: 36px 0;
+  padding: 16px 0;
+  border: none;
+  background-color: #DB8A74;
+  cursor: pointer;
+}
+.sign-container-c button:hover
+{
+  background-color: #FAC9B8;
+}
+.sign-container-f
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 48px 0;
+  margin-top: -48px;
+  
+}
+
+/* -------------------------BEGIN SLIDER------------------------- */
 #slider
 {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   background-color: #BEBBBB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.mbudgets
+{
+  width: var(--modal-width);
+  border-radius: var(--modal-radius);
+  background-color: rgba(83, 83, 83, 0.377);
+  padding: 16px;
+  
+
+}
+.mb-header
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+}
+.mb-content
+{
+  padding: 16px 0;
+}
+.mbudgets-item
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  border-radius: var(--modal-radius);
+  padding: 16px 8px;
+  margin: 8px;
+  color: white;
+}
+.mbudgets-item h2
+{
+  font-size: 16px;
+}
+.mbudgets-item p
+{
+  padding: 4px 0;
+  color: aqua;
+}
+.mbudgets-item a 
+{
+  text-decoration: none;
+  color: aqua;
+}
+.mbudgets-item a svg
+{
+  color: red;
+  
+}
+
+.mb-footer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 16px 0;
+}
+#mb-btn
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  padding: 16px 8px;
+  width: 100%;
+  border-radius: var(--modal-radius);
+  border: none;
+  cursor: pointer;
+  background-color: #DB8A74;
+  font-family: 'Unbounded', cursive; 
+}
+#mb-btn:hover
+{
+  background-color: #FAC9B8;
+}
+
+/* -------------------------BEGIN CONTENT------------------------- */
 #content
 {
 

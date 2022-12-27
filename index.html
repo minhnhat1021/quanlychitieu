@@ -13,17 +13,66 @@
 <body>
   <div id="main">
     <div id="header">
-      <div id="title" class="col-third-x2">
+      <div id="title" class="col col-third-x2 ">
         <h1>NLB Managed Budgets</h1>
       </div>
-      <div id="sign" class="col-third row">
-        <button class="signin col sign-btn-js">Đăng Nhập</button>
-        <button class="signup col sign-btn-js">Đăng ký</button>
+      <div id="sign" class="col col-third ">
+        <button class="sign-btn  sign-btn-js">Đăng Nhập</button>
+        <button class="sign-btn  sign-btn-js">Đăng ký</button>
       </div>
     </div>
 
     <div id="slider">
+      <div class="mbudgets">
+        <div class="mb-header">
+          <h1>Quản Lý Chi Tiêu</h1>
+          <i><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moneybag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M9.5 3h5a1.5 1.5 0 0 1 1.5 1.5a3.5 3.5 0 0 1 -3.5 3.5h-1a3.5 3.5 0 0 1 -3.5 -3.5a1.5 1.5 0 0 1 1.5 -1.5z"></path>
+              <path d="M4 17v-1a8 8 0 1 1 16 0v1a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+            </svg></i>
+        </div>
+        <div class="mb-content">
+          <div class="mbudgets-item">
+            <h2>Số Tiền Bạn Đang Sở Hữu</h2>
+            <p>1000000</p>
+          </div>
+          <div class="mbudgets-item">
+            <h2>Kiểm Soát Chi Tiêu</h2>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <polyline points="9 6 15 12 9 18"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="mbudgets-item">
+            <h2>Mục Tiêu Mong Muốn</h2>
+            <p>1000000</p>
+          </div>
+          <div class="mbudgets-item">
+            <h2>Phân Tích Chi Tiêu</h2>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <polyline points="9 6 15 12 9 18"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
 
+        <div class="mb-footer">
+          <button id="mb-btn"> Nạp Tiền
+            <i><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1 -1.8 -1"></path>
+                <path d="M12 7v10"></path>
+              </svg></i>
+          </button>
+
+        </div>
+      </div>
     </div>
 
     <div id="content">
@@ -35,16 +84,29 @@
     </div>
 
     <div class="modal-sign modal-sign-js">
-      <div class="modal-sign-container">
-
+      <div class="sign-container">
+        <div class="sign-container-h">
+          Quản lý chi tiêu
+        </div>
+        <div class="sign-container-c">
+          <label for="acc-input">Nhập Tài Khoản</label>
+          <input type="text" name="" id="acc-input" class="col-full" placeholder="Tài Khoản">
+          <label for="pass-input">Nhập Mật Khẩu</label>
+          <input type="text" name="" id="pass-input" class="col-full" placeholder="Mật Khẩu">
+          <button class="col-full">Đăng Nhập</button>
+        </div>
+        <div class="sign-container-f">
+          <a href="">Chưa có tài khoản ? Đăng Ký</a>
+        </div>
       </div>
     </div>
   </div>
   <!-- <script src="./main.js"></script> -->
   <script>
+    // modal-sign
     const signs = document.querySelectorAll('.sign-btn-js')
     const modalsign = document.querySelector('.modal-sign-js')
-    const modalsign_c = document.querySelector('.modal-sign-container')
+    const modalsign_c = document.querySelector('.sign-container')
 
     function close_modal_sign() {
       modalsign.classList.remove('open-modal-sign')
@@ -59,13 +121,14 @@
       event.stopPropagation()
     })
 
+    // alert đăng nhập để sử dụng
 
+    const mbudgets = document.querySelector('.mbudgets')
 
+    mbudgets.addEventListener('click', function () {
+      alert('Đăng nhập để bắt đầu tối ưu chi tiêu cá nhân')
 
-
-
-
-
+    })
 
 
   </script>
